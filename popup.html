@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Traductor de Selección</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <header class="header">
+    <span class="logo">G</span>
+    <h1>Traductor de Selección</h1>
+  </header>
+
+  <main>
+    <div class="lang-row">
+      <label for="targetLang">Traducir a:</label>
+      <select id="targetLang"></select>
+    </div>
+
+    <textarea id="inputText" placeholder="Escribe o pega texto aquí, o selecciona texto en la página y pulsa «Traducir selección»…"></textarea>
+
+    <div class="buttons">
+      <button id="btnTranslateSelection" class="secondary">Traducir selección de la página</button>
+      <button id="btnTranslate" class="primary">Traducir</button>
+    </div>
+
+    <div id="result" class="result" hidden>
+      <div class="result-langs" id="resultLangs"></div>
+      <div class="result-text" id="resultText"></div>
+      <button id="btnCopy" class="link-btn">Copiar traducción</button>
+    </div>
+
+    <div id="status" class="status" hidden></div>
+  </main>
+
+  <footer>
+    <a id="openOptions" href="#">Opciones</a>
+    <span class="hint">Atajo: Alt+Shift+T</span>
+  </footer>
+
+  <script src="languages.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

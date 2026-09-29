@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Opciones — Traductor de Selección</title>
+  <link rel="stylesheet" href="options.css" />
+</head>
+<body>
+  <main>
+    <h1>Opciones del Traductor de Selección</h1>
+
+    <section class="field">
+      <label for="targetLang">Idioma de destino por defecto</label>
+      <select id="targetLang"></select>
+    </section>
+
+    <section class="field checkbox-field">
+      <label>
+        <input type="checkbox" id="showBubble" />
+        Mostrar icono flotante al seleccionar texto
+      </label>
+      <p class="hint">Si lo desactivas, solo podrás traducir desde el menú contextual (clic derecho), el atajo de teclado o el icono de la extensión.</p>
+    </section>
+
+    <button id="save" class="primary">Guardar</button>
+    <span id="saved" class="saved" hidden>Guardado ✓</span>
+  </main>
+
+  <script src="languages.js"></script>
+  <script src="options.js"></script>
+</body>
+</html>
